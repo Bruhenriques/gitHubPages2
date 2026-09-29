@@ -1,0 +1,313 @@
+/* Configurações gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #faf8fd;
+  color: #30283d;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  scroll-margin-top: 24px;
+}
+
+a:focus-visible {
+  outline: 3px solid #723bb1;
+  outline-offset: 5px;
+}
+
+/* Cabeçalho */
+header {
+  background: #ffffff;
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #eae3f1;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #38204f;
+}
+
+.logo span {
+  color: #8445b5;
+}
+
+nav {
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #8445b5;
+}
+
+/* Apresentação */
+.inicio {
+  padding: 85px 8%;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  background: linear-gradient(135deg, #f4edf9, #fff9fc);
+}
+
+.apresentacao {
+  flex: 1;
+}
+
+.etiqueta {
+  display: inline-block;
+  color: #704095;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+h1 {
+  font-size: 52px;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+h1 span {
+  color: #8445b5;
+}
+
+.apresentacao p {
+  color: #645a6e;
+  font-size: 18px;
+  max-width: 540px;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 24px;
+  background: #7540a2;
+  color: #ffffff;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.botao:hover {
+  background: #5b2d82;
+}
+
+/* Cartão principal */
+.cartao-destaque {
+  flex: 1;
+  max-width: 390px;
+  padding: 38px;
+  background: #ffffff;
+  border: 1px solid #e9dff1;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 16px 45px #49286612;
+}
+
+.simbolo {
+  display: inline-flex;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  background: #f1e6f9;
+  color: #8445b5;
+  border-radius: 50%;
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+.cartao-destaque h2 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.cartao-destaque p {
+  color: #645a6e;
+}
+
+.selo {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 8px 14px;
+  background: #f7f1fb;
+  color: #704095;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+/* Sobre */
+.sobre {
+  max-width: 900px;
+  margin: auto;
+  padding: 70px 8%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+.sobre p {
+  color: #645a6e;
+  margin-bottom: 14px;
+}
+
+/* Funcionalidades */
+.funcionalidades {
+  padding: 60px 8%;
+  text-align: center;
+  background: #f1ebf6;
+}
+
+.subtitulo {
+  color: #645a6e;
+  margin-bottom: 35px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: left;
+}
+
+.numero {
+  display: inline-block;
+  color: #8445b5;
+  background: #f2e9f8;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #645a6e;
+  font-size: 15px;
+}
+
+/* Equipe e aviso */
+.equipe {
+  padding: 65px 8%;
+  text-align: center;
+}
+
+.equipe p {
+  margin-bottom: 8px;
+}
+
+.orientacao {
+  color: #73687d;
+}
+
+.aviso {
+  margin: 0 8% 50px;
+  padding: 20px;
+  border-left: 4px solid #8445b5;
+  border-radius: 8px;
+  background: #f1ebf6;
+}
+
+.aviso p {
+  margin-top: 5px;
+  color: #645a6e;
+  font-size: 14px;
+}
+
+/* Rodapé */
+footer {
+  padding: 35px 8%;
+  background: #ffffff;
+  border-top: 1px solid #eae3f1;
+  text-align: center;
+}
+
+footer p {
+  margin: 8px 0;
+  color: #645a6e;
+}
+
+footer small {
+  color: #73687d;
+}
+
+/* Ajustes para celular */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .inicio {
+    flex-direction: column;
+    padding: 50px 8%;
+    gap: 35px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 27px;
+  }
+
+  .cartao-destaque {
+    width: 100%;
+    max-width: none;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
